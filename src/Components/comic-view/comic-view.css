@@ -1,0 +1,42 @@
+@import "../../Shared/Css/style.css";
+
+.comic_image {
+  display: flex;
+  border-top: 1px solid var(--col3);
+  border-bottom: 1px solid var(--col3);
+}
+
+.comic_image img {
+  margin: 2rem auto;
+  max-width: 100%;
+  animation: fade-in 1200ms ease-in-out both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#transcript {
+  padding: 1rem 0;
+  /* border-bottom: 1px solid var(--col3); */
+  animation: fade-in 1200ms ease-in-out both;
+}
+
+#transcript pre {
+  white-space: pre-wrap;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5rem;
+}
