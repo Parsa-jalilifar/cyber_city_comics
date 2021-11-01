@@ -18,10 +18,10 @@ class comic_view extends Component {
 
   parseTranscript() {
     let transcriptData = this.state.comic["transcript"];
-    let filter1 = transcriptData.replaceAll("[[", "");
-    let filter2 = filter1.replaceAll("]]", "");
-    let filter3 = filter2.replace(/(\n)+{{Title.*}}/gm, "");
-    return filter3;
+    // let filter1 = transcriptData.replaceAll("[[", "");
+    // let filter2 = filter1.replaceAll("]]", "");
+    // let filter3 = filter2.replace(/(\n)+{{Title.*}}/gm, "");
+    return transcriptData;
   }
 
   render() {
